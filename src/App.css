@@ -1,38 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.quote {
+    border: 1px solid black;
+    max-height: 700px;
+    max-width: 700px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+    font-weight: 700px;
+    margin-top: 15px;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+    background-color: #FFF;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button:hover {
+    background-color: #888;
+    color: #FFF;
 }
 
-.App-link {
-  color: #61dafb;
+.quote-text {
+    padding: 15px;
+    text-align: justify;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.author-text {
+    padding: 15px;
+    text-align: end;
+    font-weight: 700;
 }
+
