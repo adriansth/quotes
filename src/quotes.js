@@ -1,4 +1,4 @@
-export default 
+const quotes = 
 [
     {
       "quote": "Life isn’t about getting and having, it’s about giving and being.",
@@ -409,3 +409,5 @@ export default
       "author": "Zig Ziglar"
     }
   ];
+
+  export default quotes;
